@@ -1,11 +1,21 @@
-name: My First Workflow
+name: DevOps workflow
 
 on: push
 
 jobs:
-  hello:
+  practice:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Say hello
-        run: echo "Hello DevOps!"
+      - name: Welcome message
+        run: echo "Starting DevOps practice"
+
+      - name: Show current date
+        run: date
+
+      - name: Show Linux information
+        run: uname -a
+
+      - name: Finish message
+        run: echo "Workflow completed successfully"
+
