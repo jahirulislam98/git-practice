@@ -1,6 +1,6 @@
 name: DevOps Workflow
 
-on: push
+on: [push, pull_request]
 
 jobs:
   practice:
@@ -18,3 +18,4 @@ jobs:
 
       - name: Finish message
         run: echo "Workflow completed successfully"
+
